@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #f4f7fc;
+  color: #263653;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 900;
+  color: #3159a8;
+  letter-spacing: 1px;
+}
+
+.brand-icon {
+  font-size: 30px;
+}
+
+.header-label {
+  color: #71809a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.welcome-card {
+  background: linear-gradient(120deg, #3159a8, #6489d4);
+  color: white;
+  padding: 35px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 12px 28px rgba(49, 89, 168, 0.15);
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.welcome-text h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 440px;
+  color: #edf2ff;
+}
+
+.triangle-illustration {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  border: 3px solid white;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 12px;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+  gap: 12px;
+}
+
+.triangle-illustration span {
+  transform: rotate(-45deg);
+}
+
+.name-section {
+  margin: 28px 0;
+}
+
+.name-section label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.name-section input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dce3ef;
+  border-radius: 12px;
+  background: white;
+  outline: none;
+  color: #263653;
+}
+
+.name-section input:focus {
+  border-color: #6489d4;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h2,
+.progress-card h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.section-heading p,
+.progress-card p {
+  color: #8290a7;
+  font-size: 13px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.menu-card {
+  position: relative;
+  text-align: left;
+  padding: 22px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #263653;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  border-color: #9bb4e7;
+  box-shadow: 0 8px 20px rgba(49, 89, 168, 0.08);
+}
+
+.menu-icon {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+
+.menu-card strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.menu-card small {
+  color: #8290a7;
+  font-size: 12px;
+}
+
+.menu-arrow {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  color: #6489d4;
+  font-size: 20px;
+}
+
+.progress-card {
+  background: white;
+  border: 1px solid #e8edf5;
+  padding: 22px;
+  border-radius: 18px;
+  margin-top: 25px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 9px;
+  background: #edf1f8;
+  border-radius: 20px;
+  margin: 16px 0 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #6489d4;
+  border-radius: 20px;
+}
+
+.progress-card small {
+  color: #8290a7;
+  font-weight: 700;
+}
+
+.back-button {
+  background: white;
+  border: 1px solid #e8edf5;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  color: #3159a8;
+  font-weight: 800;
+}
+
+.section-icon {
+  font-size: 45px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  padding: 20px;
+  color: #8290a7;
+  font-size: 12px;
+}
+
+footer p {
+  font-weight: 900;
+  color: #3159a8;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .welcome-card {
+    padding: 25px 20px;
+  }
+
+  .welcome-text h1 {
+    font-size: 22px;
+  }
+
+  .triangle-illustration {
+    width: 85px;
+    height: 85px;
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .menu-grid {
+    gap: 10px;
+  }
+
+  .menu-card {
+    padding: 17px 13px;
+  }
+
+  .menu-card strong {
+    font-size: 15px;
+  }
+
+  .menu-card small {
+    font-size: 11px;
+  }
+}
+/* HALAMAN MATERI */
+
+.materi-header {
+  background: linear-gradient(120deg, #3159a8, #6489d4);
+  color: white;
+  padding: 28px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.materi-header h1 {
+  font-size: 27px;
+  margin: 8px 0;
+}
+
+.materi-header p {
+  color: #edf2ff;
+  font-size: 14px;
+}
+
+.materi-progress {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #52698f;
+}
+
+.materi-progress .progress-bar {
+  margin-top: 10px;
+}
+
+.materi-card {
+  background: white;
+  padding: 30px;
+  border: 1px solid #e8edf5;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(49, 89, 168, 0.06);
+}
+
+.materi-illustration {
+  width: 85px;
+  height: 85px;
+  background: #edf3ff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.materi-label {
+  color: #6489d4;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.materi-card h2 {
+  font-size: 22px;
+  margin: 10px 0 14px;
+  line-height: 1.4;
+}
+
+.materi-card > p {
+  color: #66758f;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contoh-box {
+  background: #f1f5ff;
+  border-left: 4px solid #6489d4;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 24px;
+}
+
+.contoh-box strong {
+  color: #3159a8;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contoh-box p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.materi-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.materi-navigation button {
+  margin: 0;
+}
+
+.next-button {
+  background: #3159a8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background: #244785;
+}
+
+.back-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.daftar-topik {
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.daftar-topik h3 {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.topik-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 12px;
+  border: none;
+  border-bottom: 1px solid #edf1f8;
+  background: white;
+  color: #52617a;
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.topik-item:last-child {
+  border-bottom: none;
+}
+
+.topik-item.aktif {
+  background: #edf3ff;
+  color: #3159a8;
+  font-weight: 900;
+  border-radius: 9px;
+}
+
+@media (max-width: 600px) {
+  .materi-header {
+    padding: 22px;
+  }
+
+  .materi-header h1 {
+    font-size: 23px;
+  }
+
+  .materi-card {
+    padding: 22px;
+  }
+
+  .materi-card h2 {
+    font-size: 19px;
+  }
+
+  .materi-navigation button {
+    padding: 11px 13px;
+    font-size: 12px;
+  }
+
+  .daftar-topik {
+    padding: 16px;
+  }
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.game-number {
+  min-height: 75px;
+  border: 2px solid #2563eb;
+  border-radius: 14px;
+  background: white;
+  color: #1e40af;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.game-number:hover {
+  background: #dbeafe;
+}
+
+.game-number.game-selected {
+  background: #2563eb;
+  color: white;
+  border-color: #1e40af;
+  transform: scale(1.04);
+}
+
+/* PERBAIKAN BANNER LATIHAN, GAME, DAN KUIS */
+
+.welcome-card > h1 {
+  flex: 1;
+  min-width: 0;
+  font-size: clamp(23px, 3vw, 30px);
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.welcome-card > p {
+  flex: 1;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+/* Tampilan layar HP */
+@media (max-width: 600px) {
+  .welcome-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 25px 20px;
+  }
+
+  .welcome-card > h1 {
+    font-size: 25px;
+  }
+
+  .welcome-card > p {
+    font-size: 14px;
+  }
+}
